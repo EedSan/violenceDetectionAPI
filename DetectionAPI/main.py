@@ -5,7 +5,7 @@ import requests
 from flask import Flask, request, jsonify
 import pandas as pd
 
-from model import create_LRCN_model
+from model import create_LSTM_model
 from controller.video_processing import split_video_into_clips
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ app = Flask(__name__)
 sequence_length = 30
 image_height, image_width = 128, 128
 classes_list = ['normal', 'fights']
-model = create_LRCN_model(sequence_length, image_height, image_width, classes_list)
+model = create_LSTM_model(sequence_length, image_height, image_width, classes_list)
 model.load_weights('DetectionAPI/resources/best_weights.h5')
 
 global_predictions_list = []
