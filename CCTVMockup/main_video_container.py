@@ -20,7 +20,7 @@ def show_main_video_container(global_cam_list):
                 cols[j].write(f'''
                     <style>
                         .stVideo {{
-                            height: 10hv;  /* Adjust the height as needed */
+                            height: 500px;  /* Adjust the height as needed */
                             width: 100%;
                         }}
                     </style>

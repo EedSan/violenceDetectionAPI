@@ -28,7 +28,7 @@ def split_video_into_clips(filepath, model_, clip_duration=10, nn_input_shape=(1
         idx = np.round(np.linspace(0, np.array(frames).shape[0] - 1, target_frames_count, endpoint=True)).astype(int)
 
         if frames:
-            prediction = predict(model_, frames[idx])
+            predict(model_, frames[idx])
         else:
             break
     cap.release()

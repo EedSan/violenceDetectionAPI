@@ -39,7 +39,7 @@ def show_notifications_feed(port=8000):
                 section.main>div {
                     padding-bottom: 1rem;
                 }
-                [data-testid="stHorizontalBlock"] >div:nth-child(2)>div>div>div>div:nth-child(2) {
+                [data-testid="stHorizontalBlock"] >div:nth-child(2)>div>div>div>div:nth-child(2)>div {
                     overflow: auto;
                     height: 40vh;
                 }

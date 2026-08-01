@@ -1,12 +1,11 @@
 import os
 from itertools import chain
 
-import requests
-from flask import Flask, request, jsonify
 import pandas as pd
+from flask import Flask, request, jsonify
 
-from model import create_LSTM_model
 from controller.video_processing import split_video_into_clips
+from model import create_LSTM_model
 
 app = Flask(__name__)
 
